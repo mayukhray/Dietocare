@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+    font-family: "Roboto", serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+.com-gap{
+    padding: 100px 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.btn{
+    display: inline-block;
+    background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+    color: #000;
+    font: 16px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 40px;
+    
+}
+.btn:hover{
+    background: none;
+    color: #C1963C;
+}
+.btn-two{
+    display: inline-block;
+    color: #fff;
+    background-color: #D09172;
+    font: 16px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 40px;
+    margin-top: 26px;
+}
+.btn-two:hover{
+    color: #D09172;
+    background-color: transparent;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1,.h-one{
+    font-size: 100px;
+}
+h2,.h-two{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+h3,.h-three{
+    font-size: 26px;
+    font-weight: 700;
+}
+h4,.h-four{
+    font-size: 16px;
+    font-weight: 400;
+}
+span{
+    color: #D09172;
+    font-weight: 700;
+}
+
+/* ---------- header ----------  */
+.header-child{
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu{
+    /* flex-wrap: wrap; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.menu li{
+    margin: 10px 25px;
+}
+.menu li a{
+    font-size: 15px;
+    font-weight: 400;
+}
+.menu li a:hover{
+    color: #C1963C;
+}
+#active{
+    color: #C1963C;
+}
+
+
+
+/* ---------- hero section ----------  */
+.shop-hero{
+    background-color: #f7f6f6;
+}
+.shop-hero-child{
+    display: flex;
+}
+.left,.right{
+    width: 50%;
+    padding: 0 15px;
+}
+.right p{
+    margin-bottom: 38px;
+}
+#para{
+    margin-bottom: 10px;
+}
+#para2{
+    margin: 22px 0 10px 0;
+}
+.right i{
+    padding: 10px;
+    background-color: #fff;
+    color: #D09172;
+    font-size: 18px;
+    border-radius: 40px;
+}
+.right .btn-two{
+    width: 100%;
+    text-align: center;
+}
+/* ------------ product overview ----------  */
+  
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+/* ------------ Counter ---------  */
+.counter {
+    border: 2px solid black;
+    border-radius: 24px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px; 
+  }
+  
+  .decrement, .increment {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: #D09172;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .decrement:hover, .increment:hover {
+    color: #D09172;
+    background-color: transparent;
+    font-size: 50px;
+  }
+  
+  .count {
+    font-size: 24px;
+    margin: 0 10px;
+    
+  }
+
+/* -----------  Details -----------  */
+.details{
+    background-color: #f7f6f6;
+}
+.details-option {
+    display: flex;
+}
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #f7f6f6;
+    /* color: #444; */
+    cursor: pointer;
+    padding: 18px;
+    /* width: 100%; */
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin-right: 64px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .hide, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+/* ---------- footer section ------------  */
+.footer{
+  background-color: #000;
+  color: #fff;
+}
+.footer-child{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.footer-head{
+  color: transparent;
+  background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+  -webkit-background-clip: text;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #fff;
+}
+.footer-child a{
+  color: #fff;
+}
+.footer-child a:hover{
+  color: #D09172;
+}
+
+.bar{
+  min-width: 200px;
+  margin: 15px 0;
+}
+.foot-logo{
+  display: block;
+  width: 125px;
+ /* height: 38px; */
+}
+.bar-one i{
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #333333;
+  margin: 32px 5px;
+}
+.bar p{
+  padding: 10px 0;
+}
+

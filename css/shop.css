@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+    font-family: "Roboto", serif;
+   
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+.com-gap{
+    padding: 100px 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.btn{
+    display: inline-block;
+    background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+    color: #000;
+    font: 16px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 40px;
+    
+}
+.btn:hover{
+    background: none;
+    color: #C1963C;
+}
+.btn-two{
+    display: inline-block;
+    color: #fff;
+    background-color: #D09172;
+    font: 16px;
+    font-weight: 500;
+    padding: 15px 20px;
+    border-radius: 40px;
+    margin-top: 26px;
+}
+.btn-two:hover{
+    color: #D09172;
+    background-color: transparent;
+}
+#arrow{
+    transform: scaleX(1.5);
+    padding: 0 5px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+h1,.h-one{
+    font-size: 100px;
+}
+h2,.h-two{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+h3,.h-three{
+    font-size: 26px;
+    font-weight: 700;
+}
+h4,.h-four{
+    font-size: 20px;
+    font-weight: 600;
+}
+span{
+    color: #D09172;
+    font-weight: 700;
+}
+/* ---------- header ----------  */
+
+.header-child{
+    padding: 22px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.menu li{
+    margin: 10px 25px;
+}
+.menu li a{
+    font-size: 15px;
+    font-weight: 400;
+}
+.menu li a:hover{
+    color: #C1963C;
+}
+#active{
+    color: #C1963C;
+}
+
+
+
+
+
+/* ---------------- hero section ---------------  */
+.shop-hero{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.767),transparent),url(../img/Vector.png) no-repeat left 100px bottom/20% 80%,url(../img/shop/young-woman-doing-yoga-and-exercise-at-park-gm1311822209-400809902.png) no-repeat left center/20% 100%,url(../img/shop/young-woman-doing-yoga.png) no-repeat right center/80% 100%;
+/* ❌ how to repeat as mirror image  */
+}
+.shop-hero-child{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+  /* --------- 2nd section------------- */
+     /* ----- sir koreche ------  */
+     .swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Adjust number of columns */
+        gap: 20px;
+        justify-content: center;
+        /* align-items: center; */
+      }
+      .swiper-slide {
+       height: auto;
+        width: auto !important; 
+        text-align: left;
+        /* Ensure grid layout applies correctly */
+      }
+
+      /* ---------sir koreche----------  */
+
+
+     .swiper{
+        padding: 50px 0;
+     }
+    .swip-img{
+        max-width: 330px;
+        /* height: auto; */
+        background-color: #FFF7F3;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .swiper-slide img{
+        width: 100%;
+        height: auto;
+        border: 10px solid #FFF7F3;
+      }
+      s{
+        font-size: 16px;
+        color: black;
+        font-weight: 400;
+      }
+      .cart span{
+       margin-right: 50px;
+      }
+      
+/* ---------- footer section ------------  */
+.footer{
+    background-color: #000;
+    color: #fff;
+ }
+ .footer-child{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+ .footer-head{
+    color: transparent;
+    background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+    -webkit-background-clip: text;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 14px;
+    border-bottom: 2px solid #fff;
+ }
+ .footer-child a{
+    color: #fff;
+ }
+ .footer-child a:hover{
+    color: #D09172;
+ }
+ 
+ .bar{
+    min-width: 200px;
+    margin: 15px 0;
+ }
+ .foot-logo{
+    display: block;
+    width: 125px;
+   /* height: 38px; */
+ }
+ .bar-one i{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #333333;
+    margin: 32px 5px;
+ }
+ .bar p{
+    padding: 10px 0;
+ }
+
+
+
+/* -------- mediaquery ---------- */
+/* -------- mediaquery ---------- */
+/* -------- mediaquery ---------- */
+
+@media (min-width: 320px) and (max-width: 574.98px) {
+ .swiper-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+
+      } 
+}
+@media (min-width: 575px) and (max-width: 767.98px) {
+    .swiper-wrapper {
+        grid-template-columns: repeat(2, 1fr); 
+
+      } 
+}
+@media (min-width: 768px) and (max-width: 990.98px) {
+    .swiper-wrapper {
+        grid-template-columns: repeat(3, 1fr); 
+
+      } 
+}
+@media (min-width: 991px) and (max-width: 1199.98px) {
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+}

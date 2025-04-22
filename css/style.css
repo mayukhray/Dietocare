@@ -1,0 +1,837 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    overflow-x: hidden;
+    font-family: "Roboto", serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+.com-gap{
+    padding: 100px 0;
+}
+.row{
+    margin: 0 -15px;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    display: inline-block;
+    background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+    color: #000;
+    font: 16px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 40px;
+    border: 2px solid #fff;
+
+}
+.btn:hover{
+    background: none;
+    color: #C1963C;   
+     border: 2px solid #C1963C;
+
+}
+.btn-two{
+    display: inline-block;
+    color: #fff;
+    background-color: #D09172;
+    font: 16px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 40px;
+    margin-top: 26px;
+}
+.btn-two:hover{
+    color: #D09172;
+    background-color: transparent;
+}
+#arrow{
+    transform: scaleX(1.5);
+    padding: 0 5px;
+}
+/*----- ❌ both options below are creating problems in cards and .section img is not being called anywhere (i.e. it is not connecting to any img code-----*/
+
+/* .section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+/* img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+h1,.h-one{
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+h2,.h-two{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+h3,.h-three{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+span{
+    color: #D09172;
+    font-weight: 700;
+}
+/* ---------- header ----------  */
+.header-child{
+    margin: 22px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu li{
+    margin: 10px 25px;
+}
+.menu li a{
+    font-size: 15px;
+    font-weight: 400;
+}
+.menu li a:hover{
+    color: #C1963C;
+}
+#active{
+    color: #C1963C;
+}
+/* ---------- Universal card section ----------  */
+.card-section{
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    max-width: 360px;
+    min-width: 300px;
+    margin-top: 40px;
+}
+.card p{
+    margin-bottom: 23px;
+}
+.card a{
+    color: transparent;
+    background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+    -webkit-background-clip: text;
+}
+.card a:hover{
+    font-size: larger;
+}
+.one{
+    max-height: 250px;
+    margin-bottom: 30px;
+}
+.two{
+    max-height: 390px;
+}
+#arrow2{
+    background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+    padding: 7px 8px;
+    margin-left: 10px;
+    border-radius: 50px;
+    color: #000;
+}
+
+.card-two{
+    width: 188px;
+    height: 183px;
+    text-align: center;
+    margin: 47px 0;
+}
+.card-two figure img{
+    height: 38px;
+    width: 38px;
+}
+.up{
+    position: relative;
+}
+.up figure img{
+    position: absolute;
+    top: 73px;
+    left: 78px;
+}
+.down{
+    position: relative;
+}
+.down figure img{
+    position: absolute;
+    top: 140px;
+    left: 78px;
+}
+
+/* ---------- Home Banner ---------  */
+/* ---------- Home Banner ---------  */
+/* ---------- Home Banner ---------  */
+
+/* ------------ hero section -----------  */
+.hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.7),transparent),url(../img/Vector.png)no-repeat left 100px bottom/20% 80%, url(../img/Mask\ group.png) no-repeat center center/cover;   
+
+}
+.hero-child{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 60%;
+}
+.hero-para{
+    font-size: 30px;
+    letter-spacing: 10px;
+    border-left: 3px solid #EDBD00;
+    padding-left: 8px;
+}
+.hero-child p{
+    width: 70%;
+}
+#active2{
+    color: #D09172;
+}
+.hero-btn{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.hero-btn span{
+    margin-left: 25px;
+}
+#play{
+    background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+    padding: 11px 11px 10px 13px;
+    margin-left: 25px;
+    border-radius: 50px;
+    color: #000;
+    box-shadow: 0 0 0 12px rgba(128, 128, 128, 0.147);
+}
+/*----------- 2nd Section ---------- */
+.program-child{
+    text-align: center;
+}
+
+.para{
+    width: 70%;
+    margin: 0 auto 35px auto;
+}
+/* -------- 3rd section -------  */
+.about{
+    background-color: #FFF7F3;
+    background-image: url(../img/About\ Us.png);
+    background-repeat: no-repeat;
+    background-position: right 50px center;
+}
+.about-child{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.pic{
+    max-width: 560px;
+    min-width: 450px;
+    width: 50%;
+}
+.content{
+    margin: auto;
+    padding: 0 5%;
+    width: 50%;
+}
+.content p{
+    margin-bottom: 20px;
+}
+
+/* ---------- 4th Section----------  */
+.choose{
+    text-align: center;
+}
+
+/* ------ 5TH section ------------  */
+.created{
+    background: linear-gradient(to right,#00000025 10%,#000000a7 30%,#000000e3 60%),
+                url(../img/created.png) no-repeat left 30px center,
+                url(../img/image\ 7784.png) no-repeat center center/cover;  
+    color: #fff;
+}
+
+/* ---------- swiper section ---------------  */
+.created .container{
+    position: relative;
+}
+.navi{
+    position: absolute;
+    right: 10%;
+    top: 40px;
+}
+.navig{
+    position: absolute;
+    /* right: 200px; */
+    left: 80%;
+    top: 40px;
+}
+.created-child .swiper {
+    width: 100%;
+    height: 400px;
+  }
+
+  .created-child  .swiper-slide {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .created-child  .swiper-slide img {
+    max-width: 263px;
+    min-width: 263px;
+    max-height: 317px;
+  }
+
+  .created-child  .space{
+    margin: 0 20px;
+  }
+
+  /* -------- 6th section -----------  */
+  .stories{
+    text-align: center;
+  }
+
+  .stories p{
+    width: 70%;
+    margin: 0 auto 30px auto;
+    /* padding: 30px 0; */
+  }
+ /* ------------ 7th section ----------- */
+ .face{
+    background: url(../img/Untitled.png) no-repeat left/50% 100%;
+ }
+ .face-child{
+   margin-left: 50%;
+ }
+ 
+ .face-child p{
+    margin-bottom: 35px;
+ }
+ .list{
+    display: flex;
+    margin: 20px 0;
+ }
+ .list p{
+    margin: 21px 0;
+ }
+ .list img{
+    margin-right:20px;
+    width: 10%;
+    min-width: 50px;
+ }
+ /* ---------- footer section ------------  */
+ .footer{
+    background-color: #000;
+    color: #fff;
+ }
+ .footer-child{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+ .footer-head{
+    color: transparent;
+    background: linear-gradient(to right, #F4E07A,#DBBB5B,#CEA94C,#C1963C);
+    -webkit-background-clip: text;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    border-bottom: 2px solid #fff;
+ }
+ .footer-child a{
+    color: #fff;
+ }
+ .footer-child a:hover{
+    color: #D09172;
+ }
+ 
+ .bar{
+    min-width: 200px;
+    margin: 15px 0;
+ }
+ .foot-logo{
+    display: block;
+    width: 125px;
+   /* height: 38px; */
+ }
+ .bar-one i{
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #333333;
+    margin: 32px 5px;
+ }
+ .bar li{
+    margin-bottom: 20px;
+ }
+
+
+
+
+ /* --------------------------- About Page -----------------------------  */
+ /* --------------------------- About Page -----------------------------  */
+ /* --------------------------- About Page -----------------------------  */
+
+
+ /* --------- About banner ------------  */
+.about-hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.7),transparent),url(../img/Vector.png) no-repeat left 100px bottom/20% 80%,url(../img/image\ 7806.png) no-repeat center center/cover;
+}
+.about-hero-child{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+/* ------------ 2nd section ----------- */
+.pic-two{
+    max-width: 50%;
+    position: relative;
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+}
+#young{
+    width: 85%;
+    border-radius: 10px;
+    object-fit: fill;
+}
+#young2{
+    border-radius: 10px;
+    position: absolute;
+    max-width: 40%;
+    max-height: 40%;
+    bottom: -5%;
+    right: -5%;
+    border: 10px solid #FFF7F3;
+}
+/* ------------ 3rd section -------------  */
+.two-main{
+    text-align: center;
+}
+.two-main p{
+    padding: 0 15px;
+}
+
+/* -------------------------- PROGRAM PAGE -------------------------------- */
+/* -------------------------- PROGRAM PAGE -------------------------------- */
+/* -------------------------- PROGRAM PAGE -------------------------------- */
+
+/* --------- program banner ------------ */
+.program-hero{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.767),transparent),url(../img/Vector.png) no-repeat left 100px bottom/20% 80%,url(../img/program/fit-girl-living-an-active-lifestyle-and-doing-exercise-and-yoga-at-park-gm1454383429-490057577.png) no-repeat left center/20% 100%,url(../img/program/fit-girl.png) no-repeat right center/80% 100%;
+/* ❌ how to repeat as mirror image  */
+}
+.program-hero-child{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+/* ---------- 2nd section ----------  */
+    .card-three{
+        max-width: 360px;
+        height: 250px;
+        position: relative;
+        color: #fff;
+        /* border: 2px solid red; */
+        margin-bottom: 20px;
+    }
+    .option{
+        position: absolute;
+        bottom: 0;
+        padding: 10px;
+       display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+ 
+    
+
+
+/* ---------- testimonial ------------  */
+/* ---------- testimonial ------------  */
+/* ---------- testimonial ------------  */
+.test-hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.7),transparent),url(../img/Vector.png)no-repeat left 100px bottom/20% 80%, url(../img/testimonial/Mask\ group.png) no-repeat center center/100% 100%;   
+}
+.test-hero-child{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 60%;
+}
+.feed{
+    text-align: center;
+}
+.clients{
+    background: url(../img/testimonial/what\ ourClients\ say.png) no-repeat right 50px center/80px 80%, linear-gradient(to bottom,#FFF7F3,#fff);
+    text-align: center;
+}
+/* ---------- test and news banner -------- */
+.card-section-main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.text-card{
+    text-align: center;
+    max-width: 350px;
+    margin: 15px;
+}
+.text-card img{
+    width: 100%;
+}
+/* ----------- blog --------  */
+/* ----------- blog --------  */
+/* ----------- blog --------  */
+.blog-hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.7),transparent),url(../img/Vector.png)no-repeat left 100px bottom/20% 80%, url(../img/testimonial/Mask\ group_2.png) no-repeat center center/cover;   
+}
+.blog-hero-child{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 60%;
+}
+/* ------ 2nd banner -------  */
+.news{
+    background-color: #FFF7F3;
+}
+.news-child .card-section{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.news .card-four{
+    text-align: left;
+    max-width: 350px;
+    margin: 15px;
+}
+.card-four img{
+    width: 100%;
+}
+.bio{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted #D09172;
+    margin-bottom: 20px;
+}
+.bio i{
+    color: #D09172;
+}
+.card-four a{
+    color: #D09172;
+
+}
+
+/* --------- Contact Page ------------ */
+/* --------- Contact Page ------------ */
+/* --------- Contact Page ------------ */
+.contact-hero{
+    background: linear-gradient(to right, rgba(0,0,0,0.7),transparent),url(../img/Vector.png)no-repeat left 100px bottom/20% 80%, url(../img/contact/Mask\ group.png) no-repeat center center/100% 100%;   
+    min-height: 85vh;
+}
+.contact-child{
+    height: calc(85vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    width: 60%;
+}
+/* -------- 2nd banner -----------  */
+.details{
+    background-color: #f2efea50;
+}
+.details .card{
+    background-color: #fff;
+    padding: 28px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+    border-radius: 15px;
+}
+.icon{
+    max-width: 70px;
+    max-height: 70px;
+    object-fit: fill;
+    padding: 15px;
+    border-radius: 50%;
+    border: 1px solid #EFBBA3;
+    margin-bottom: 15px;
+}
+/* -------- 3rd section --------  */
+.contact-form{
+    background-color: #FFF7F3;
+
+}
+.contact-form-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic-three{
+    width: 50%;
+}
+.pic-three img{
+    /* ❌ not working on only class(i.e., removing img) */
+    width: 95%;
+   
+}
+.content-two{
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    width: 50%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    
+}
+form input, textarea{
+    padding: 24px;
+    margin: 12px 10px;
+    border: 1px solid #EFBBA3;
+    border-radius: 10px;
+}
+
+ /* ------------- mediaquery ------------------ */
+ /* ------------- mediaquery ------------------ */
+ /* ------------- mediaquery ------------------ */
+
+    @media (min-width: 320px) and (max-width: 574.98px) {
+    /* ---------- universal ----------  */
+    h2{
+       font-size: 40px;
+    }
+       
+    /* -------- hero ----------  */
+    .hero-child{
+       width: 100%;
+       align-items: center;
+       text-align: center;
+   }
+   h1{
+       font-size: 80px;
+       text-align: center;
+   }
+   .hero-child p{
+       width: 90%;
+   }
+   /* --------- 3rd section --------- */
+   .pic{
+       min-width: 310px;
+       margin-bottom: 75px;
+   }
+       .content{
+       width: 100%;
+       }
+    /* -------- 7th section ---------  */
+    .face{
+       background: url(../img/Untitled.png) no-repeat right/cover;
+   }
+   
+   .face-child{
+       margin: auto;
+       width: 70%;
+     }
+     .face-child p{
+       padding: 20px 0;
+    }
+    .list{
+       display: flex;
+       margin: 10px 0;
+    }
+    .list p{
+       padding: 10px 0;
+    }
+    .list img{
+       margin-right: 20px;
+       width: 10%;
+    }
+     /* ---------- footer ---------  */
+     .bar{
+       text-align: center;
+    }
+    .bar-one{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+     /* ----------- Contact page ----------  */
+         /* ----------- Contact page ----------  */
+         .contact-form-child{
+            flex-direction: column;
+        }
+        .pic-three,.content-two{
+            width: 80%;
+        }
+    
+    }
+    @media (min-width: 575px) and (max-width: 767.98px) {
+    /* --------- universal -----------  */
+    h2{
+       font-size: 40px;
+    }
+       
+        /* -------- hero ----------  */
+       .hero-child{
+           width: 100%;
+           align-items: center;
+           text-align: center;
+       }
+       h1{
+           font-size: 80px;
+       }
+       .hero-child p{
+           width: 90%;
+       }
+       /* --------- 3rd section --------- */
+      .pic{
+       margin-bottom: 75px;
+       }
+       .content{
+        width: 80%;
+       }
+       /* -------- 7th section ---------  */
+       .face{
+           background: url(../img/Untitled.png) no-repeat right/cover;
+       }
+       .face-child{
+           margin: auto;
+           width: 70%;
+         }
+         .face-child p{
+           padding: 20px 0;
+        }
+        .list{
+           display: flex;
+           margin: 10px 0;
+        }
+        .list p{
+           padding: 10px 0;
+        }
+        .list img{
+           margin-right: 20px;
+           width: 10%;
+        }
+        /* ---------- footer ---------  */
+        .bar{
+           text-align: center;
+        }
+        .bar-one{
+           width: 100%;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+
+         /* ----------- Contact page ----------  */
+         /* ----------- Contact page ----------  */
+         .contact-form-child{
+            flex-direction: column;
+        }
+        .pic-three,.content-two{
+            width: 80%;
+        }
+    
+        
+    }
+    @media (min-width: 768px) and (max-width: 990.98px) {
+       
+       /* -------- hero ----------  */
+       .hero-child{
+           width: 80%;
+       }
+        /* --------- 3rd section --------- */
+          .pic{
+          margin-bottom: 100px;
+          }
+          .content{
+           width: 80%;
+          }
+       /* -------- 7th section ---------  */
+       /* .face-child{
+           margin: auto;
+           width: 70%;
+         } */
+         .face-child p{
+           padding: 20px 0;
+        }
+        .list{
+           display: flex;
+           margin: 10px 0;
+        }
+        .list p{
+           padding: 10px 0;
+        }
+        .list img{
+           margin-right: 20px;
+           width: 10%;
+        }
+
+
+        /* ----------- Contact page ----------  */
+        /* .contact-form-child{
+            flex-direction: column;
+            gap: 20px;
+        } */
+        .pic-three,.content-two{
+            width: 80%;
+        }
+    }
+    @media (min-width: 991px) and (max-width: 1199.98px) {
+       /* ----------- hero section -----------  */
+       .hero-child{
+           width: 80%;
+       }
+    
+    }
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+       
+   
+    }
